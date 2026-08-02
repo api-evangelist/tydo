@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of https://tydo.com
+host: https://tydo.com
+notes: >-
+  No /.well-known/ discovery surface is published. www.tydo.com serves a
+  mismatched TLS certificate (CN=amplify.dtcmvp.com) and returns 404; the
+  production site lives on the apex host https://tydo.com/. No docs, api,
+  developers, mcp, status, or trust subdomains resolve in DNS.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/mcp.json
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /robots.txt
+  status: 200

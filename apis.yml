@@ -1,8 +1,11 @@
 aid: tydo
 name: Tydo
-description: 'Tydo is a company surfaced as a portfolio company of greylock and added to the API Evangelist
-  network as a stub for enrichment. Sector: applications. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Tydo delivers autonomous audits for Shopify stores inside Claude. A single integration
+  runs hundreds of audits - retention, shipping, email and SMS, and more - scoring a store against
+  similar brands in its network, re-running on a cadence in the background, and routing every finding
+  to a next step: fix it yourself, turn on an agent, or get matched to a vetted partner via dtcmvp.
+  A Greylock portfolio company, currently waitlist-only with no public developer portal, API
+  documentation, or published MCP endpoint.'
 url: https://raw.githubusercontent.com/api-evangelist/tydo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +13,34 @@ x-backed-by:
 - greylock
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://tydo.com/icon.svg
 tags:
 - Company
 - Applications
+- Shopify
+- eCommerce
+- Audits
+- AI Agents
+- Analytics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tydo-domain-security.yml
 - type: Website
-  url: https://www.tydo.com/
+  url: https://tydo.com/
+- type: GitHubOrganization
+  url: https://github.com/tydo
+- type: LLMsTxt
+  url: llms/tydo-llms.txt
