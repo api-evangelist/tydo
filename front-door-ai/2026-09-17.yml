@@ -1,0 +1,27 @@
+# Front Door AI Index — tydo — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: tydo
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: tydo.com
+  final_host: tydo.com
+  ownership: own
+  owner: tydo
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 11
+  host_score: 11
+  density: 14.84
+  words: 741
+  tiers:
+    agentic: 1
+    core: 1
+    model: 9
+  ambiguous: 0
+  top_terms:
+    Claude: 9
+    AI: 1
+    prompts: 1
